@@ -1,0 +1,19 @@
+$baseColor: #bc945e;
+$yellow:#d7953e;
+
+$raleway: 'Raleway', sans-serif;
+$lato: 'Lato', sans-serif;
+$alegreya: 'Alegreya', serif;
+$open: 'Open Sans', sans-serif;
+$ptserif:'PT Serif', serif;
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay;
+}
+
+@mixin placeholder {
+  &.placeholder { @content }
+  &:-moz-placeholder { @content }
+  &::-webkit-input-placeholder { @content }
+}

@@ -1,0 +1,86 @@
+.service-certified {
+    .service-image{
+        position: relative;
+        @media (max-width:991px){
+            width: 370px;
+            float: none;
+            padding: 0;
+            margin: 0 auto;
+        }
+        @media (max-width:380px){
+            width: 320px;
+            float: none;
+            margin: 0 auto;
+            
+        }
+        &:after{
+            content: '';
+            background: transparent;
+            position: absolute;
+            border: 2px solid #fff;
+            display: block;
+            top: 10px;
+            left: 25px;
+            bottom: 10px;
+            right: 25px;
+            @media (max-width:991px){
+                left: 10px;
+                right: 10px;
+            }
+        }
+        img{
+            max-width: 100%;
+        }
+    }
+    .service-content{
+        border: 10px solid #f0f0f0;
+        padding: 52px 30px 50px 64px;
+        @media (max-width:1199px){
+            padding: 30px 10px 10px 20px;
+        }
+        @media (max-width:991px){
+            width: 370px;
+            float: none;
+            margin: 0 auto;
+        }
+        @media (max-width:380px){
+            width: 320px;
+            float: none;
+            margin: 0 auto;
+            padding: 10px 10px
+        }
+        h2{
+            font: bold 29px/25px $alegreya;
+            letter-spacing: 0.3px;
+            color: #242424;
+            text-transform: uppercase;
+            margin: 0;
+            @include transition;
+            cursor: pointer;
+            @media (max-width:1199px){
+               font-size: 23px;
+            }
+            &:hover{
+                color: $baseColor;
+            }
+        }
+        p{
+            font: 400 14px/26px $open;
+            letter-spacing: 0.3px;
+            color:#898989;
+            padding-bottom: 24px;
+            padding-top: 22px;
+            margin: 0;
+            @media(max-width:1199px){
+                padding-top: 7px;
+                padding-bottom: 9px;
+            }
+        }
+        h4{
+            font: 400 18px/26px $open;
+            color: #3d3d3d;
+            letter-spacing: 0.3px;
+            margin: 0;
+        }
+    }
+}

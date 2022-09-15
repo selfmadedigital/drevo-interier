@@ -1,0 +1,116 @@
+.emergency-contact{
+    background: #000;
+    overflow: hidden;
+    .left-side{
+        width: calc(50% + 45px);
+        float: left;
+        position: relative;
+        background: #57371f;
+        height: 213px;    
+        @media (max-width:767px){
+            width: 100%;
+            height: auto;
+            padding: 25px 0;
+        }    
+        &:after{
+            content: "";
+            border-top: 213px solid transparent;
+            border-left: 160px solid #57371f;
+            position: absolute;
+            left: 100%;
+            top: 0;
+            display: block;
+            @media (max-width:767px){
+                display: none;
+            }
+        }
+         &:before{
+            content: "";
+            position: absolute;
+            border-top: 213px solid transparent;
+            border-left: 174px solid #030504;
+            line-height: 0px;
+            top: 0;
+            left: 100%;
+            @media (max-width:767px){
+                display: none;
+            }
+        }
+        .content{
+            max-width: 630px;
+            margin-left: auto;
+            margin-right: 0;
+            position: relative;
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+            @media (max-width:1199px){
+                max-width: 513px;
+            }
+            @media (max-width:991px){
+                max-width: 400px;
+            }
+            @media (max-width:767px){
+                margin: 0 auto;
+                max-width: 100%;
+                width: 400px;
+                padding: 0 15px;
+                top: auto;
+                transform: none;
+            }
+            img{
+                margin-right: 15px;
+                @media (max-width:991px){
+                    max-width: 28px;
+                }                
+            }
+            h3{
+                font:300 22px/32px $open;
+                margin: 0px;
+                color: #ffffff;
+                @media (max-width:991px){
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+                & + h3{
+                    font-weight: 400;
+                    color: $baseColor;
+                    margin-bottom: 33px;
+                    @media (max-width:1199px){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+            .phone{
+                font: 300 28px/35px $ptserif;
+                letter-spacing: 0.3px;
+                color: $baseColor;
+                font-style: italic;
+                margin-right: 54px;
+                display: block;
+                float: left;
+                @media (max-width: 1199px){
+                    font-size: 20px;
+                    margin-right: 20px;
+                }
+            }
+            .email{
+                font: 400 20px/35px $open;
+                letter-spacing: 0.3px;
+                color: $baseColor;
+                margin: 0;
+                display: inline-block;
+                @media (max-width:1199px){
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    .right-side{
+        width: calc(50% - 45px);
+        display: inline-block;
+        @media (max-width:767px){
+            display: none;
+        }
+    }
+}

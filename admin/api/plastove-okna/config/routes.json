@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/plastove-okna",
+      "handler": "plastove-okna.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/plastove-okna",
+      "handler": "plastove-okna.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/plastove-okna",
+      "handler": "plastove-okna.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

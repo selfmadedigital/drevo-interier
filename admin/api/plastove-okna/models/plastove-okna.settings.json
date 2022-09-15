@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "plastoveokna",
+  "info": {
+    "name": "plastoveokna"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Nadpis": {
+      "type": "string",
+      "required": true
+    },
+    "obsah": {
+      "type": "richtext",
+      "required": true
+    },
+    "hesta_obrazok": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "hesta_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "vyhody": {
+      "type": "component",
+      "repeatable": true,
+      "component": "plastoveokna.vyhody"
+    }
+  }
+}

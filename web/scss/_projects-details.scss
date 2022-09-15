@@ -1,0 +1,153 @@
+.projects-description-area{
+    padding: 80px 0px 70px 0px;
+    .main_photos{
+        .col-sm-5{
+            @media (max-width: 767px){
+                img{
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+    .projects-description{
+        img{
+            width: 100%;
+        }
+        .project-top{
+            padding: 48px 0px;
+            border-bottom: 1px solid #e5e5e5;
+            h2{
+                font-size: 22px;
+                padding-bottom: 18px;
+                color: #242424;
+            }
+            p{
+                & + p{
+                    margin: 0;
+                    
+                }
+            }
+        }
+        p{
+            font: 400 14px/26px $open;
+            letter-spacing: 0.3px;
+            color: #898989;
+        }
+        h3{
+            font: 700 18px/28px $open;
+            letter-spacing: 0.3px;
+            color: #242424;
+            margin: 0;
+            padding-bottom: 17px;
+        }
+        .projects-description-text{
+            padding-top: 42px;
+            padding-bottom: 36px;
+            p{
+                line-height: 28px;
+            }
+        }
+        .work-scope{
+            background: #f5f5f5;
+            padding: 34px 40px;
+            @media (max-width:991px){
+                padding: 15px;
+            }
+            .scope-item{
+                margin: 0;
+                padding: 0;
+                display: inline-block;
+                padding: 7px 0px;
+                li{
+                    list-style: none;
+                    font: 15px/24px $open;
+                    color: #d6b161;
+                    @include transition;
+                    display: inline-block;
+                    padding-left: 30px;
+                    & + li{
+                        margin-top: 15px;
+                    }
+                    &:before{
+                        content: "\f0a4";
+                        width: 30px;
+                        height: auto;
+                        font: normal normal normal 14px/24px FontAwesome;
+                        font-size: 16px;
+                        text-rendering: auto;
+                        color: #d6b161;
+                        cursor: pointer;
+                        float: left;
+                        margin-left: -30px;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+    .projects-description-left{
+        @media (max-width:767px){
+            padding-top: 30px;
+        }
+//        img{
+//            width: 100%;
+//        }
+        .projects_hours{
+            margin-top: 50px;
+            padding: 35px 40px;
+            background: #f5f5f5;
+            @media (max-width:1199px){
+            }
+            @media (max-width:991px){
+                padding: 15px;
+            }
+            @media (max-width:439px){
+            }
+            h2{
+                font-size: 22px;
+                padding-bottom: 18px;
+                color: #242424;
+            }
+            ul{
+                padding-top: 20px;
+                @media (max-width: 991px){
+                    padding-top: 5px;
+                }
+                li{
+                    font: 14px/24px $open;
+                    text-transform: capitalize;
+                    color: #898989;
+                    width: 40%;
+                    display: inline-block;
+                    margin-top: 15px;
+                    @media (max-width:991px){
+                        line-height: 18px;
+                        font-weight: 300;                        
+                    }
+                    &:nth-child(even){
+                        width: 58%;
+                        float: right;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+.project-gallery{    
+    margin: 35px -5px 4px;
+    .gallery-area{
+        .gallery-single{
+            padding: 4px;
+            &.col-xs-5{
+                width: 37.7%;
+            }
+            &.col-xs-7{
+                width: 62.3%;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_onas_produkties",
+  "info": {
+    "name": "produkty",
+    "icon": "teeth",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nazov": {
+      "type": "string",
+      "required": true
+    },
+    "popis": {
+      "type": "richtext",
+      "required": true
+    },
+    "obrazok": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

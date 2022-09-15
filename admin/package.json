@@ -1,0 +1,43 @@
+{
+  "name": "cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^23.0.0",
+    "@ckeditor/ckeditor5-react": "^2.1.0",
+    "font-awesome-picker": "^2.0.0",
+    "jquery": "^1.9.1",
+    "knex": "^0.20.15",
+    "mysql": "latest",
+    "mysql2": "^2.2.5",
+    "showdown": "^1.9.1",
+    "strapi": "^3.2.3",
+    "strapi-admin": "^3.6.8",
+    "strapi-connector-bookshelf": "^3.6.8",
+    "strapi-plugin-content-manager": "^3.6.8",
+    "strapi-plugin-content-type-builder": "^3.6.8",
+    "strapi-plugin-email": "^3.6.8",
+    "strapi-plugin-upload": "^3.2.3",
+    "strapi-plugin-users-permissions": "^3.6.8",
+    "strapi-utils": "^3.6.8",
+    "yup": "^0.32.11"
+  },
+  "author": "A Strapi developer",
+  "strapi": {
+    "uuid": "c2aff2cc-c8b9-449a-8262-ebb9b01eca12"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT",
+  "main": "server.js"
+}

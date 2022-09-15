@@ -1,0 +1,129 @@
+.touch{
+    .touch_bg{
+        .section_header{
+            p{
+                max-width: 840px;
+            }
+        }
+        .touch_top{
+            ul{
+                .item{
+                    padding: 15px 28px 30px 0px;
+                    text-align: center;   
+                    .media{
+                        .media-left{
+                            padding-right: 30px;
+                            vertical-align: middle;
+                            a{
+                                color: #e1ba60;
+                                border: 1px solid #e1ba60;
+                                border-radius: 100%;
+                                display: block;
+                                width: 50px;
+                                height: 50px;
+                                i{
+                                    border-radius: 50%;
+                                    font-size: 30px;
+                                    line-height: 32px;
+                                    padding-top: 8px;
+                                }
+                            }
+                        }
+                        .media-body{
+                            text-align: left;
+                            font: 14px/26px $open;
+                            color: #898989;
+                            letter-spacing: 0.3px;
+                        }
+                    }
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+        .touch_middle{
+           padding-top: 80px;
+            .input_form{
+                position: relative;
+                form{
+                    .form-control{
+                        margin-bottom: 20px;
+                        border-radius: 0;
+                        font: 15px/31px $open;
+                        color: #959595;
+                        padding: 11px 20px;
+                        border: 1px solid #e1e1e1;
+                        height: auto;
+                        box-shadow: none;
+                        &:hover,&:focus{
+                            border: 1px solid #d6d6d6;
+                            border-color: #d6d6d6;  
+                        }
+                        &:focus{
+                            box-shadow: 0 0 6px 0 rgba(215, 149, 62, 0.57);
+                        }
+                        &.error{
+                            margin-bottom: 0;
+                            & + .error{
+                                font: 13px/24px $open;
+                                margin-bottom: 20px;
+                                margin-top: 5px;
+                                color: red;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                    textarea.form-control{
+                        margin-bottom: 32px;
+                        resize: none;
+                        padding: 15px 20px;
+                        height: 203px;
+                    }
+                    button{
+                        text-transform: uppercase;
+                        font: 600 15px/36px $open;
+                        color: #ae7a51;
+                        padding: 2px 29px 0;
+                        text-shadow: none;
+                        letter-spacing: 1px;
+                        border:1px solid #cdcdcd;
+                        background: transparent;
+                        border-radius: 0;
+                        &:hover{
+                            color: #000;
+                            border-color: #bb793c;
+                        }
+                    }
+                }
+                #success,#error{
+                    position: absolute;
+                    top: -15px;
+                    display: block;
+                    right: 0;
+                    left: 0;
+                    bottom: -15px;
+                    background: rgba(0,0,0,0.5);
+                    display: none;
+                    p{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        margin: 0;
+                    }
+                }
+                #success{
+                    color: lawngreen;
+                }
+                #error{
+                    color: orangered;
+                }
+            }
+        }
+    }
+}
+
+#mapBox{
+    height: 425px;
+}

@@ -1,0 +1,134 @@
+.who-area{
+    position: relative;
+    background:url("../images/who-area/bg.png") no-repeat scroll right bottom;
+    @media (max-width:991px){
+        background-image: none;
+    }
+    .who-are{
+        margin-top: 50px;
+    }
+    .who-are-image{
+        position: relative;
+        @media (max-width:767px){
+            width: 270px;
+            margin: 0 auto;
+        }
+         &:after{
+            content: '';
+            position: absolute;
+            border: 2px solid #fff;
+            z-index: 4;
+            display: block;
+            top: 10px;
+            left: 10px;
+            bottom: 10px;
+            right: 10px;
+        }
+        img{
+            max-width: 100%;
+            @media (max-width: 1199px){
+                width: 100%;
+            }
+        }
+    }
+    .who-are-texts{
+        overflow: hidden;
+        padding-left: 35px;
+        @media (max-width:500px){
+            padding-left: 15px;
+        }
+        h3{
+            font: 400 20px/26px $open;
+            letter-spacing: 0.3px;
+            color: #242424;
+            margin: 0;
+        }
+        p{
+            font: 400 14px/26px $open;
+            letter-spacing: 0.3px;
+            color: #898989;
+            margin: 0;
+            padding: 16px 0px 20px 0px;
+        }
+        .who-text{
+            display: block;
+            padding-top: 47px;
+            overflow: hidden;
+            .list-left{
+                margin: 0;
+                padding: 0;
+                display:block;
+                width: 29%;
+                float: left;
+                @media (max-width:991px){
+                    width: 50%;
+                }
+                @media (max-width:500px){
+                    width: 100%;
+                }
+                ul{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+        .media-left{
+            @media (max-width:991px){
+                padding-left: 25px;
+            }
+        }
+        .media-body{
+            @media (max-width:991px){
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+}
+
+
+.two-col-list{
+    max-width: 530px;
+    li{
+        list-style: none;
+        font: 400 14px/33px $raleway;
+        color: #8e8d8d;
+        white-space: nowrap;
+        float: left;
+        min-width: 265px;
+        &:before{
+            content: "\f18e";
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            padding-right: 12px;
+            color: #d7953e;
+        }
+    }
+}
+
+
+.who-text-box{
+    background: #f6f6f6;
+    padding: 25px 10px 20px 10px;
+    margin-top: 42px;
+    @media (max-width:500px){
+        padding: 25px 5px 20px 5px;
+    }
+    .media-left{
+        padding-right: 40px;
+        @media (max-width:650px){
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+    .media-body{
+        vertical-align: middle;
+        p{
+            padding: 0;
+            font: 400 14px/26px $open;
+            letter-spacing: 0.3px;
+            color: #898989;
+            margin: 0;
+        }
+    }
+}

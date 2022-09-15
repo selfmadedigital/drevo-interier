@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "zakazkovestolarstvo",
+  "info": {
+    "name": "zakazkovestolarstvo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "produkty": {
+      "type": "component",
+      "repeatable": true,
+      "component": "zakazkovestolarstvo.produkty"
+    },
+    "certifikaty": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_page",
+  "info": {
+    "name": "onas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "titulok": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "ofirme": {
+      "type": "richtext",
+      "required": true
+    },
+    "partneri": {
+      "type": "component",
+      "repeatable": true,
+      "component": "onas.partner"
+    },
+    "produkty": {
+      "type": "component",
+      "repeatable": true,
+      "component": "onas.produkty"
+    },
+    "slider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "onas.slider",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_plastoveokna_vyhodies",
+  "info": {
+    "name": "vyhody",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "ikona": {
+      "type": "string",
+      "required": true
+    },
+    "nadpis": {
+      "type": "string",
+      "required": true
+    },
+    "obsah": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

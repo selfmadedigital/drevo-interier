@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_onas_sliders",
+  "info": {
+    "name": "slider",
+    "icon": "photo-video",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "obrazok": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "zobrazenie": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

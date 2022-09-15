@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/zakazkove-stolarstvo",
+      "handler": "zakazkove-stolarstvo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/zakazkove-stolarstvo",
+      "handler": "zakazkove-stolarstvo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/zakazkove-stolarstvo",
+      "handler": "zakazkove-stolarstvo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

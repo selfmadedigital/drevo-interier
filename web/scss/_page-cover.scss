@@ -1,0 +1,63 @@
+.header-breadcrumb{
+    background: url("../images/about/banner.jpg") no-repeat scroll center 0 transparent;
+    background-size: cover; 
+    padding: 212px 0px 88px;
+    @media (max-width: 767px){
+        padding: 80px 0;
+    }
+}
+
+.page-cover-tittle{
+    font: 600 30px/26px $open;
+    letter-spacing: 0.3px;
+    color: #fff;
+    display: inline-block;
+    border: 1px dashed #81654d;
+    padding: 12px 25px 10px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.breadcrumb{
+    background: none;
+    display: inline-block;
+    float: right;
+    padding: 0;
+    text-transform: capitalize;
+    margin: 0;
+    @media (max-width:450px){
+        float: none;
+        display: block;
+    }
+    li{
+        a{
+            font: 600 14px/35px $open;
+            letter-spacing: 0.3px;
+            color: #fff;
+        }
+        &:before{            
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;            
+            padding: 0 7px;
+            color: #fff;     
+            display: inline-block;
+        }
+        &:first-child{            
+            &:before{
+                content: "\f015";
+                padding-left: 0;
+            }
+        }
+        & + li:before{                   
+            content: "\f105";
+            color: #fff;
+        }  
+    }
+    >.active{
+        font-family: $open;
+        color: #fff;
+    }
+}

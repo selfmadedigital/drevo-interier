@@ -1,0 +1,178 @@
+.our-services {
+    background: #f6f6f6;
+    p{
+        font: 400 14px/26px $open;
+        color:#898989;
+        letter-spacing: 0.3px;
+        padding-top: 29px;
+    }
+    .service-part{
+        text-align: center;
+        margin-top: 100px;
+        & + .service-part{
+//            @media (max-width: 767px){
+//                margin-top: 50px;
+//            }
+        }
+        .service-icon{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background: #9c683f;
+            text-align: center;
+            line-height: 100px;
+            position:absolute;
+            left: 50%;
+            top: -50px;
+            transform: translateX(-50%);
+            img{
+                color: #fff;
+            }
+        }
+        .service-description{
+            background: #fff;
+            padding: 80px 20px 30px;
+            border: 5px solid #f0f0f0;
+            @include transition;
+            cursor: pointer;
+            @media (max-width: 1199px){
+                padding: 50px;
+            }
+            @media (max-width: 991px){
+                padding: 30px 10px;
+            }
+            h4{
+                font: bold 15px/1 $open;
+                color: #242424;
+                margin: 0 0 18px;
+                text-transform: uppercase;
+                @media (max-width:1199px){
+                    margin-top: 50px;
+                }
+            }
+            p{
+                font: 14px/24px $open;
+                color: #898989;
+                margin-bottom: 0;
+                letter-spacing: 0.1px;
+                padding: 0;
+                @media (max-width: 1199px){
+                    margin-bottom: 0;
+                    font-size: 14px;
+                    line-height: 24px;
+                }
+            }
+            &:hover{
+                background: #9c683f;
+                border-color:#9c683f; 
+                h4{
+                    color: #fff;
+                }
+                p{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+//......featured-services........//
+
+.featured-service-area{
+    background:url("../images/services/featured-bg.jpg") no-repeat scroll 0 0;
+    background-size: cover;
+    position: relative;
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: rgba(63, 48, 36, 0.85);
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+    .common{
+        z-index: 1;
+        h2{
+            color: #fff;
+        }
+    }
+    .service-featured{
+        margin-top: 50px;
+    }
+    .featured-service{
+        text-align: center;
+        z-index: 1;
+        @media (max-width:767px){
+            max-width: 270px;
+            margin: 0 auto;
+            padding: 0px 0px 25px 0px ;
+        }
+        img{
+            max-width: 100%;
+        }
+        h4{
+            font: 400 16px/50px $open;
+            color: #d9d9d9;
+            margin: 0;
+            border-bottom: 1px solid #5f5147;
+            padding-top: 3px;
+            @include transition;
+            &:hover{
+                color: $baseColor;
+            }
+        }
+        &:last-child{
+            @media (max-width:767px){
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+
+
+//....core-featured....//
+
+.core-featured-area{
+    padding: 75px 0px 65px 0px;
+    @media (max-width:991px){
+        padding-bottom: 50px;
+    }
+    .core-featured{
+        padding-top: 50px;
+        .core-feature{
+            i{
+                font-size: 62px;
+                color: #b67b4a;
+            }
+            h4{
+                font:bold 20px/28px $alegreya;
+                letter-spacing: 0.3px;
+                color: #242424;
+                text-transform: uppercase;
+                margin-top: 28px;
+                @include transition;
+                &:hover{
+                    color: $baseColor;
+                }
+            }
+            p{
+                font: 400 14px/26px $open;
+                letter-spacing: 0.3px;
+                color: #898989;
+            }
+            @media (max-width:991px){
+                margin-bottom: 15px;
+            }
+            @media (max-width:767px){
+                padding: 0px 15px;
+            }
+        }
+    }
+}
+    

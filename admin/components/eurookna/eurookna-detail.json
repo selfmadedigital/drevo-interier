@@ -1,0 +1,22 @@
+{
+  "collectionName": "eurookna_detail",
+  "info": {
+    "name": "sluzby",
+    "icon": "list-alt"
+  },
+  "options": {},
+  "attributes": {
+    "nadpis": {
+      "type": "string",
+      "required": true
+    },
+    "obsah": {
+      "type": "text",
+      "required": true
+    },
+    "ikona": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

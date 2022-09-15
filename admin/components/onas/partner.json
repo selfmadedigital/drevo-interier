@@ -1,0 +1,28 @@
+{
+  "collectionName": "partners",
+  "info": {
+    "name": "partner",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "partner": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "link": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.clients{
+    padding-top: 55px;
+    padding-bottom: 20px;
+    .clients-logos{
+        padding-top: 15px;
+        .client{
+            padding: 15px;
+        }
+        .inner-logo{
+            border: 5px solid #f5f5f5;
+            text-align: center;
+            line-height: 113px;
+            a{
+                display: block;
+                height: 113px;
+            }
+            img{
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+    }
+}

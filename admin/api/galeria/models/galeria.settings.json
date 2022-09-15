@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "galerias",
+  "info": {
+    "name": "Galeria"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "fotky": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

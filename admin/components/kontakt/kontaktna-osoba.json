@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_kontakt_kontaktna_osobas",
+  "info": {
+    "name": "kontaktna_osoba",
+    "icon": "phone-alt"
+  },
+  "options": {},
+  "attributes": {
+    "meno": {
+      "type": "string",
+      "required": true
+    },
+    "telefon": {
+      "type": "biginteger",
+      "required": true
+    }
+  }
+}

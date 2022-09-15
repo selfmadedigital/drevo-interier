@@ -1,0 +1,15 @@
+{
+  "collectionName": "servis_sluzby",
+  "info": {
+    "name": "sluzby",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "sluzba": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

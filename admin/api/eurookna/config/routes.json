@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/eurookna",
+      "handler": "eurookna.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/eurookna",
+      "handler": "eurookna.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/eurookna",
+      "handler": "eurookna.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

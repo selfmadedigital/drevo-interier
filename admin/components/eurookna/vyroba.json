@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_eurookna_vyrobas",
+  "info": {
+    "name": "Vyroba",
+    "icon": "snowplow"
+  },
+  "options": {},
+  "attributes": {
+    "obrazok": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "popis": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}

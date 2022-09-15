@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "eurookna",
+  "info": {
+    "name": "eurookna"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "uvod_nadpis": {
+      "type": "string",
+      "required": true
+    },
+    "uvod_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "blok_nadpis": {
+      "type": "string",
+      "required": true
+    },
+    "blok_text": {
+      "type": "richtext",
+      "required": true
+    },
+    "sluzby": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eurookna.eurookna-detail",
+      "required": true
+    },
+    "Vyroba": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eurookna.vyroba"
+    }
+  }
+}

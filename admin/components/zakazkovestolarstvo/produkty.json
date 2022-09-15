@@ -1,0 +1,45 @@
+{
+  "collectionName": "zakazkovestolarstvo_produkty",
+  "info": {
+    "name": "produkty",
+    "icon": "align-justify",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nazov": {
+      "type": "string",
+      "required": true
+    },
+    "nadpis_1": {
+      "type": "string"
+    },
+    "text_1": {
+      "type": "richtext"
+    },
+    "nadpis_2": {
+      "type": "string"
+    },
+    "text_2": {
+      "type": "richtext"
+    },
+    "obrazok_1": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "obrazok_2": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

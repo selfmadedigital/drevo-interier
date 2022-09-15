@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "servis",
+  "info": {
+    "name": "servis",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "nadpis_1": {
+      "type": "string"
+    },
+    "text_1": {
+      "type": "richtext"
+    },
+    "nadpis_2": {
+      "type": "string",
+      "required": true
+    },
+    "text_2": {
+      "type": "richtext",
+      "required": true
+    },
+    "sluzby": {
+      "type": "component",
+      "repeatable": true,
+      "component": "servis.sluzby",
+      "required": true
+    },
+    "renovacia": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "blok": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

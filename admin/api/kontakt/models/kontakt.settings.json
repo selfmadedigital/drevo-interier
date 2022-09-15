@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "kontakts",
+  "info": {
+    "name": "kontakt",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "adresa": {
+      "type": "richtext",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "kontaktna_osoba": {
+      "type": "component",
+      "repeatable": true,
+      "component": "kontakt.kontaktna-osoba"
+    },
+    "nazov_spolocnosti": {
+      "type": "string",
+      "required": true
+    },
+    "email_formular": {
+      "type": "email",
+      "required": true
+    },
+    "mapa_latitude": {
+      "type": "float",
+      "required": true
+    },
+    "mapa_longitude": {
+      "type": "float",
+      "required": true
+    }
+  }
+}
